@@ -1,20 +1,27 @@
 fontend 
     framework: reactjs, html, css
-    model:
+    package:
+        - React Router : npm install react-router-dom
+                         npm install localforage match-sorter sort-by
+        - bootstrap :    npm i bootstrap@5.3.2
+                         npm install react-bootstrap bootstrap
+        - React-countup: npm i react-countup
+        - Swiper:        npm i swiper
+        - Popper:        npm i @popperjs/core
     language: javascript  
     lệnh:
-        - khởi tạo : npm create vite@latest frontend
+        - khởi tạo :             npm create vite@latest frontend
         - truy cập vào frontend: cd fontend
-        - tải các package : npm install
-        - chạy fontend: npm run dev
+        - tải các package :      npm install
+        - chạy fontend:          npm run dev
 
 backend 
     framework: laravel 
     language: PHP
 
     lệnh:
-        - khởi tạo : composer create-project laravel/laravel backend
+        - khởi tạo :            composer create-project laravel/laravel backend
         - truy cập vào backend: cd backend
-        - chạy backend: php artisan serve
+        - chạy backend:         php artisan serve
 
 
