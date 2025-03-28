@@ -1,0 +1,20 @@
+fontend 
+    framework: reactjs, html, css
+    model:
+    language: javascript  
+    lệnh:
+        - khởi tạo : npm create vite@latest frontend
+        - truy cập vào frontend: cd fontend
+        - tải các package : npm install
+        - chạy fontend: npm run dev
+
+backend 
+    framework: laravel 
+    language: PHP
+
+    lệnh:
+        - khởi tạo : composer create-project laravel/laravel backend
+        - truy cập vào backend: cd backend
+        - chạy backend: php artisan serve
+
+
