@@ -7,6 +7,45 @@ fontend
         - truy cập vào frontend: cd frontend
         - Khởi chạy :            npm start
     Struct:
+        frontend/
+            ├──node_modules/
+            ├── public/
+            │   ├── favicon.ico
+            │   ├── index.html                      
+            │   └── manifest.json
+            ├── src/
+            │   ├── assets/
+            │   ├── components/
+            │   │   ├──ui/
+            │   │   ├──layout/
+            │   │   ├──hooks/
+            │   │   └──utils/
+            │   ├── pages/
+            │   │    ├──Home/
+            │   │    ├──About/
+            │   │    └── Dashboard/
+            │   ├── store/
+            │   │    ├──slices/
+            │   │    └──index.js
+            │   ├── routes/
+            │   │    ├──privateRoutes.js
+            │   │    ├──publicRoutes.js
+            │   │    └──index.isx
+            │   ├── services/
+            │   │    ├──authService.js
+            │   │    └──userService.js
+            │   ├── config/
+            │   │    ├──axios.js
+            │   │    ├──env.js
+            │   │    └──theme.js
+            │   ├── types/
+            │   │    ├──user.js
+            │   │    └──auth.js   
+            │   ├── App.js   
+            │   ├── index.js
+            │   └── reportWebVitals.js
+            ├── package.json    
+            └── README.md 
 
 
 backend 
