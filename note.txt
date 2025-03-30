@@ -1,6 +1,9 @@
 fontend 
     framework: reactjs, html, css
     package:
+                npm install react-router-dom
+                npm install @reduxjs/toolkit react-redux
+                npm install axios
     language: javascript  
     lệnh:
         - khởi tạo :             npx create-react-app frontend
@@ -10,7 +13,7 @@ fontend
         frontend/
             ├──node_modules/
             ├── public/
-            │   ├── favicon.ico
+            │   ├── logo.svg
             │   ├── index.html                      
             │   └── manifest.json
             ├── src/
