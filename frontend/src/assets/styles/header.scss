@@ -1,0 +1,112 @@
+$main-bg-color: #F8F5E9;
+$search-bg-color: #9DC08B;
+$text-color: #3A7D44;
+.flex{
+  display: flex;
+}
+  
+
+  
+  .navbar {
+      display: flex;
+      justify-content: space-around;
+      background-color: $main-bg-color;
+      padding: 20px;
+
+  
+      .logo {
+          display: flex;
+          align-items: center;
+  
+          img {
+              height: 40px;
+              margin-right: 10px;
+          }
+  
+          span {
+              font-size: 24px;
+              font-weight: bold;
+          }
+      }
+  
+      .search-container {
+          background-color: $search-bg-color;
+          padding-left: 10px;
+          padding-right: 10px;
+          display: flex;
+          border-radius: 20px; 
+          align-items: center;
+          padding-right: 10px;
+          padding-left: 10px;
+          width: 30%;
+          
+          
+          .icon-search{   
+            background-size: 24px 24px; 
+            width: 24px; 
+            height: 24px; 
+            background-repeat: no-repeat; 
+            background-position: center;
+          }
+  
+          input {
+              padding-left: 10px;
+              padding-right: 10px;
+              border: none;
+              background-color: $search-bg-color;
+              outline: none;
+              width: 70%;
+          }
+          .wall{
+            font-weight: bold;
+            background-color: $search-bg-color;
+            color: $main-bg-color;
+          }
+  
+          .search-button {
+              font-weight: bold;
+              padding-left: 10px;
+              padding-right: 10px;
+              border: none;
+              background-color: $search-bg-color;
+              cursor: pointer;
+              color: #3A7D44;
+          }
+      }
+  
+      nav {
+          ul {
+              display: flex;
+              list-style: none;
+              li {
+                  margin-left: 20px;
+                  a {
+                      text-decoration: none;
+                      color: $text-color;
+                      font-weight: bold;
+                  }
+              }
+          }
+      }
+      .cart {
+        position: relative;
+
+        :after {
+            content: '0';
+            position: absolute;
+            top: -30px;
+            right: 0px;
+            background: red;
+            color: white;
+            border-radius: 50%;
+            padding: 3px 6px;
+            font-size: 12px;
+        }
+    }
+  }
+
+  .dash{
+    border-bottom: 2px solid $text-color;
+    width: 80%;
+    margin: auto;
+  }

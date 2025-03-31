@@ -2,7 +2,6 @@ fontend
     framework: reactjs, html, css
     package:
                 npm install react-router-dom
-                npm install @reduxjs/toolkit react-redux
                 npm install axios
     language: javascript  
     lệnh:
