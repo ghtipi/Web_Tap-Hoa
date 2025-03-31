@@ -62,3 +62,21 @@ backend
     Struct:
     
 
+# GIT AND GITHUB
+
+- git init : dự án hiện tại lên đám mây
+- git status: trạng thái của dự án.
+- git add: Chuẩn bị lưu lại file đó
+- git add . :Chuẩn bị lưu lại toàn bộ file.
+- git reset: Không chuẩn bị lưu lại file.
+- git commit: Chính thức lưu và ghi chú lại.
+- git log: Coi lại thời điểm đã lưu.
+- git log —oneline: Coi lại thời điểm đã lưu nhưng rút gọn.
+- git checkout {branch name}: Quay lại id hoặc branch của dự án.
+- git branch: Kiểm tra các branch.
+- git checkout -b {branch name}: Tạo branch mới.
+- git merge {branch name}: Tổng hợp các file của branch.
+- git branch -d {branch name}: Xóa branch.
+- git clone {url repo} : Lấy file từ remove về local.
+- git push: đẩy từ local lên remove.
+- git push -u origin {branch name}: Đẩy branch lên github.
