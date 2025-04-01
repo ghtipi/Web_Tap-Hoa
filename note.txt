@@ -60,7 +60,7 @@ backend
         - Khởi chạy:            php artisan serve
     Struct:
     
-
+ 
 # GIT AND GITHUB
 
 - git init : dự án hiện tại lên đám mây
@@ -81,10 +81,34 @@ backend
 - git push -u origin {branch name}: Đẩy branch lên github.
 
 
+# Tạo database trong laravel
+B1: Tạo Migration
+    php artisan make:migration create_products_table
+    định nghĩa bảng
+    Tạo bảng :  php artisan migrate
+    
+B2: Tạo model
+    php artisan make:model Product
+
+B3: Nhập dữ liệu
+    Tạo seeder: php artisan make:seeder ProductSeeder
+    Chạy seeder: php artisan db:seed --class=ProductSeeder
 
 
-CREATE DATABASE ecommerce;
-USE ecommerce;
+
+#Qui tắt đặt tên biến :
+Số ít: Dùng cho Model (Product, Order, User)
+
+Số nhiều: Dùng cho tên bảng trong Database (products, orders, users)
+
+Snake_case: Dùng cho tên cột trong Database (user_id, created_at)
+
+CamelCase: Dùng cho tên biến trong PHP ($productName, $orderStatus)
+
+
+
+CREATE DATABASE database_ecommerce;
+USE database_ecommerce;
 
 -- Bảng người dùng
 CREATE TABLE users (
