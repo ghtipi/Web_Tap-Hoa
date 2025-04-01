@@ -2,7 +2,6 @@ $main-bg-color: #F8F5E9;
 $search-bg-color: #9DC08B;
 $text-color: #3A7D44;
 $secondary-color: #ecf0f1;
-$link-hover-color: #3498db;
 
 .dash{
     border-top: 2px solid $text-color;
@@ -40,16 +39,15 @@ $link-hover-color: #3498db;
           font-size: 24px;
           transition: color 0.3s ease-in-out;
   
-          &:hover {
-            color: $link-hover-color;
-          }
         }
       }
   
       .footer-links {
         margin: 10px 0;
+        font-weight: bold;
   
         a {
+          
           color: $search-bg-color;
           margin: 0 15px;
           font-size: 16px;

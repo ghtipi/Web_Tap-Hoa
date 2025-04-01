@@ -1,11 +1,12 @@
 import React from 'react'
-import '../assets/styles/footer.scss'
+import '../../assets/styles/footer.scss'
 
 
 //import icon
-import Logo from '../assets/images/icons/Logo.png'
-import Facebook from '../assets/images/icons/facebook.png'
-import Instagram from '../assets/images/icons/instagram.png'
+import Logo from '../../assets/images/icons/Logo.png'
+import Facebook from '../../assets/images/icons/facebook.png'
+import Instagram from '../../assets/images/icons/instagram.png'
+import Youtube from '../../assets/images/icons/youtube.png'
 
 
 
@@ -21,8 +22,7 @@ const Footer = () => {
             <div class="social-icons">
                 <a href="https://www.facebook.com/thanh.phat.865487"><img src={Facebook} alt="Facebook-icon" /><i class="fab fa-facebook"></i></a>
                 <a href="https://www.instagram.com/thanhphat_tipi954/"><img src={Instagram} alt="Instagram-icon"/><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-linkedin"><img src={Youtube} alt="Youtube-icon" /></i></a>
                 <a href="#"><i class="fab fa-youtube"></i></a>
             </div>
             <div class="footer-links">

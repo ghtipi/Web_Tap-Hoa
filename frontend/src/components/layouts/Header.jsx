@@ -1,9 +1,13 @@
 import React from 'react'
 import { useState } from "react";
-import '../assets/styles/header.scss'
-import Logo from '../assets/images/icons/Logo.svg'
-import Shop from '../assets/images/icons/shop.png'
-import Search from '../assets/images/icons/search.png'
+import '../../assets/styles/header.scss'
+
+
+import Logo from '../../assets/images/icons/Logo.svg'
+import Shop from '../../assets/images/icons/shop.png'
+import Search from '../../assets/images/icons/search.png'
+import Home from '../../assets/images/icons/home.png'
+import User from '../../assets/images/icons/user.png'
 
 
 const Header = () => {
@@ -21,10 +25,10 @@ const Header = () => {
                     <p className="wall">|</p>
                     <button className="search-button ">Tìm kiếm</button>
                 </div>
-                <nav>
+                <nav >
                     <ul>
-                        <li><a href="#" className="home">Trang chủ</a></li>
-                        <li><a href="#" className="account">Tài khoản</a></li>
+                        <li><a href="#" ><img src={Home} alt="Home-icon" className="icon"/>Trang chủ</a></li>
+                        <li><a href="#"  ><img src={User} alt="User-icon" className="icon" />Tài khoản</a></li>
                     </ul>
                 </nav>
                 <div className="cart">

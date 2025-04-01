@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import { Route, Router } from 'react-router-dom';
 import Home from './pages/Home';
-import Header from './parts/Header';
-import Footer from './parts/Footer';
+import Header from './components/layouts/Header';
+import Footer from './components/layouts/Footer';
 
 
 function App() {
