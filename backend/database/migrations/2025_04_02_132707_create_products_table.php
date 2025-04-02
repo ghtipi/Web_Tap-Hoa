@@ -20,7 +20,7 @@ return new class extends Migration
             $table->integer('stock')->default(0);
             $table->timestamps();
             // khoá ngoại
-            $table->foreign('caterory_id')->references('id')->on('categoreis')->onDelete('set null');
+            $table->foreign('category_id')->references('id')->on('categories')->onDelete('set null');
         });
     }
     public function down(): void
