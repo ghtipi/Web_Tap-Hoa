@@ -1,3 +1,172 @@
+Struct:
+    Web_Tap_hoa/
+        ├──frontend/
+        │        ├──node_modules/
+        │        ├── public/
+        │        ├── src/
+        │        │   ├── assets/
+        │        │   ├── components/
+        │        │   │    └──layout/
+        │        │   │        ├──Footer.jsx
+        │        │   │        └──Header.jsx
+        │        │   ├── pages/
+        │        │   │    └──Home/
+        │        │   │        └──index.jsx  
+        │        │   ├── App.jsx  
+        │        │   └── main.jsx
+        │        ├── .gitignore
+        │        ├── eslint.config.js
+        │        ├── index.html
+        │        ├── package-lock.json
+        │        ├── package.json    
+        │        ├── README.md
+        │        └── vite.config.js
+        └──backend/
+                ├──app/
+                │   ├── Console/
+                │   │       └── Kernel.php 
+                │   ├── Exceptions/
+                │   │       └── Handler.php 
+                │   ├── Http/
+                │   │       ├── Controllers/
+                │   │       │       └── Kernel.php 
+                │   │       ├── Middleware/
+                │   │       │       ├── Authenticate.php
+                │   │       │       ├── EncryptCookies.php
+                │   │       │       ├── PreventRequestsDuringMaintenance.php
+                │   │       │       ├── RedirectIfAuthenticated.php
+                │   │       │       ├── TrimStrings.php
+                │   │       │       ├── TrustHosts.php
+                │   │       │       ├── TrustProxies.php
+                │   │       │       ├── ValidateSignature.php
+                │   │       │       └── VerifyCsrfToken.php
+                │   │       └── Kernel.php
+                │   ├── Models/
+                │   │       ├── Address.php
+                │   │       ├── Cart.php
+                │   │       ├── CartItem.php
+                │   │       ├── Category.php
+                │   │       ├── Discount.php
+                │   │       ├── Notification.php
+                │   │       ├── Order.php
+                │   │       ├── OrderItem.php
+                │   │       ├── Payment.php
+                │   │       ├── Product.php
+                │   │       ├── ProductImage.php
+                │   │       ├── Review.php
+                │   │       ├── ShippingMethod.php
+                │   │       ├── User.php
+                │   │       └── wishlists.php
+                │   └── Providers/ 
+                │           ├── AppServiceProvider.php
+                │           ├── AuthServiceProvider.php
+                │           ├── BroadcastServiceProvider.php
+                │           ├── EventServiceProvider.php
+                │           └── RouteServiceProvider.php                     
+                ├──bootstrap/
+                │     ├── cache/
+                │     │     ├── .gitignore
+                │     │     ├── packages.php
+                │     │     └── services.php
+                │     └── app.php
+                ├──config/
+                │     ├── app.php
+                │     ├── auth.php
+                │     ├── broadcasting.php
+                │     ├── cache.php
+                │     ├── cors.php
+                │     ├── database.php
+                │     ├── filesystems.php
+                │     ├── hashing.php
+                │     ├── logging.php
+                │     ├── mail.php
+                │     ├── queue.php
+                │     ├── sanctum.php
+                │     ├── services.php
+                │     ├── session.php
+                │     └── view.php
+                ├──database/
+                │     ├── factories/
+                │     │     └── UserFactory.php
+                │     ├── migrations/
+                │     │     ├──2014_10_12_100000_create_password_reset_tokens_table.php
+                │     │     ├──2019_08_19_000000_create_failed_jobs_table.php
+                │     │     ├──2019_12_14_000001_create_personal_access_tokens_table.php
+                │     │     ├──2025_04_02_130720_create_users_table.php
+                │     │     ├──2025_04_02_131958_create_categories_table.php
+                │     │     ├──2025_04_02_132707_create_products_table.php
+                │     │     ├──2025_04_02_133608_create_product_images_table.php
+                │     │     ├──2025_04_02_134906_create_carts_table.php
+                │     │     ├──2025_04_02_135637_create_cart_items_table.php
+                │     │     ├──2025_04_02_140417_create_orders_table.php
+                │     │     ├──2025_04_02_180355_create_order_items_table.php
+                │     │     ├──2025_04_02_181136_create_payments_table.php
+                │     │     ├──2025_04_02_182318_create_shipping_methods_table.php
+                │     │     ├──2025_04_02_182532_create_reviews_table.php
+                │     │     ├──2025_04_02_183314_create_addresses_table.php
+                │     │     ├──2025_04_02_190154_create_discounts_table.php
+                │     │     ├──2025_04_02_190616_create_wishlists_table.php
+                │     │     └──2025_04_02_190815_create_notifications_table.php
+                │     ├── seeders/
+                │     │     └──DatabaseSeeder.php
+                │     └── .gitignore
+                ├──public/
+                │     ├── .htaccess
+                │     ├── favicon.ico
+                │     ├── index.php
+                │     └── robots.txt
+                ├──resources/
+                │     ├── css/
+                │     │     └── app.css
+                │     ├── js/
+                │     │     ├──app.js
+                │     │     └──bootstrap.js
+                │     └── views/
+                ├──routes/
+                │     ├── api.php
+                │     ├── channels.php
+                │     ├── console.php
+                │     └── web.php
+                ├──storge/
+                │     ├── app/
+                │     │     ├── public/
+                │     │     │       └── .gitignore
+                │     │     └── .gitignore
+                │     ├── framework/
+                │     │     ├── cache/
+                │     │     │     ├──data/
+                │     │     │     │     └── .gitignore
+                │     │     │     └── .gitignore
+                │     │     ├── sessions/
+                │     │     │     └── .gitignore
+                │     │     ├── testing/
+                │     │     │     └── .gitignore
+                │     │     ├── views/
+                │     │     │     └── .gitignore
+                │     │     └── .gitignore
+                │     └── logs/
+                │           └── .gitignore
+                ├──tests/
+                │     ├──Feature/
+                │     │     └── ExampleTest.php
+                │     ├──Unit/
+                │     │     └── ExampleTest.php
+                │     ├──CreatesApplication.php
+                │     └──TestCase.php
+                ├──vendor/
+                ├──.editorconfig
+                ├──.env
+                ├──.env.example
+                ├──.gitattributes
+                ├──.gitignore
+                ├──artisan
+                ├──composer.json
+                ├──composer.lock
+                ├──package.json
+                ├──phpunit.xml
+                ├──README.md
+                └──vite.config.js
+                
 
 fontend 
     framework: reactjs, html, css
@@ -10,46 +179,7 @@ fontend
         - truy cập vào frontend: cd frontend
         - Khởi chạy :            npm start
     Struct:
-        frontend/
-            ├──node_modules/
-            ├── public/
-            │   ├── logo.svg
-            │   ├── index.html                      
-            │   └── manifest.json
-            ├── src/
-            │   ├── assets/
-            │   ├── components/
-            │   │   ├──ui/
-            │   │   ├──layout/
-            │   │   ├──hooks/
-            │   │   └──utils/
-            │   ├── pages/
-            │   │    ├──Home/
-            │   │    ├──About/
-            │   │    └── Dashboard/
-            │   ├── store/
-            │   │    ├──slices/
-            │   │    └──index.js
-            │   ├── routes/
-            │   │    ├──privateRoutes.js
-            │   │    ├──publicRoutes.js
-            │   │    └──index.isx
-            │   ├── services/
-            │   │    ├──authService.js
-            │   │    └──userService.js
-            │   ├── config/
-            │   │    ├──axios.js
-            │   │    ├──env.js
-            │   │    └──theme.js
-            │   ├── types/
-            │   │    ├──user.js
-            │   │    └──auth.js   
-            │   ├── App.js   
-            │   ├── index.js
-            │   └── reportWebVitals.js
-            ├── package.json    
-            └── README.md 
-
+        
 
 backend 
     framework: laravel 
@@ -59,25 +189,13 @@ backend
         - khởi tạo :            composer create-project laravel/laravel backend
         - truy cập vào backend: cd backend
         - Khởi chạy:            php artisan serve
+        - Tạo Migration:        php artisan make:migration create_products_table
+        - 
+        - 
+        - Khởi Tạo model:       php artisan make:model ModelName
     Struct:
-    model: 
-        User
-        Category
-        Product
-        ProductImage
-        Cart
-        CartItem
-        Order
-        OrderItem
-        Payment
-        ShippingMethod
-        Review
-        Address
-        Discount
-        Wishlist
-        Notification
-        php artisan make:model ModelName
 
+        
  
 # GIT AND GITHUB
 
