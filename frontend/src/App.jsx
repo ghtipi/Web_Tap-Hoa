@@ -1,20 +1,20 @@
-import { useState } from 'react'
-import { Route, Router } from 'react-router-dom';
-import Home from './pages/Home';
-import Header from './components/layouts/Header';
-import Footer from './components/layouts/Footer';
+import React from 'react';
+import { Outlet, Link } from 'react-router-dom';
 
+const App = () => {
+    return (
+        <div>
+            <nav>
+                <ul>
+                    <li><Link to="/login">Đăng nhập</Link></li>
+                    <li><Link to="/signup">Đăng ký</Link></li>
+                    <li><Link to="/dashboard">Dashboard</Link></li>
+                </ul>
+            </nav>
+            <hr />
+            <Outlet /> 
+        </div>
+    );
+};
 
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-    <Header/>
-    <Home/>
-    <Footer/>
-    </>
-  );
-}
-
-export default App
+export default App;

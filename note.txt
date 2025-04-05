@@ -118,10 +118,9 @@ Struct:
                 ├──resources/
                 │     ├── css/
                 │     │     └── app.css
-                │     ├── js/
-                │     │     ├──app.js
-                │     │     └──bootstrap.js
-                │     └── views/
+                │     └── js/
+                │           ├──app.js
+                │           └──bootstrap.js
                 ├──routes/
                 │     ├── api.php
                 │     ├── channels.php
@@ -173,12 +172,14 @@ fontend
     package:
                 npm install react-router-dom
                 npm install axios
+                composer require laravel/sanctum
+                php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
     language: javascript  
     lệnh:
         - khởi tạo :             npx create-react-app frontend
         - truy cập vào frontend: cd frontend
         - Khởi chạy :            npm start
-    Struct:
+
         
 
 backend 
@@ -186,60 +187,20 @@ backend
     language: PHP
 
     lệnh:
-        - khởi tạo :            composer create-project laravel/laravel backend
+        - khởi tạo :            composer create-project "laravel/laravel:^10.0" backend
         - truy cập vào backend: cd backend
         - Khởi chạy:            php artisan serve
         - Tạo Migration:        php artisan make:migration create_products_table
-        - 
-        - 
+        - Tạo bảng :            php artisan migrate
+        - Tạo seeder:           php artisan make:seeder ProductSeeder
+        - Chạy seeder:          php artisan db:seed --class=ProductSeeder
         - Khởi Tạo model:       php artisan make:model ModelName
-    Struct:
 
         
- 
-# GIT AND GITHUB
-
-- git init : dự án hiện tại lên đám mây
-- git status: trạng thái của dự án.
-- git add: Chuẩn bị lưu lại file đó
-- git add . :Chuẩn bị lưu lại toàn bộ file.
-- git reset: Không chuẩn bị lưu lại file.
-- git commit: Chính thức lưu và ghi chú lại.
-- git log: Coi lại thời điểm đã lưu.
-- git log —oneline: Coi lại thời điểm đã lưu nhưng rút gọn.
-- git checkout {branch name}: Quay lại id hoặc branch của dự án.
-- git branch: Kiểm tra các branch.
-- git checkout -b {branch name}: Tạo branch mới.
-- git merge {branch name}: Tổng hợp các file của branch.
-- git branch -d {branch name}: Xóa branch.
-- git clone {url repo} : Lấy file từ remove về local.
-- git push: đẩy từ local lên remove.
-- git push -u origin {branch name}: Đẩy branch lên github.
-
-
-# Tạo database trong laravel
-B1: Tạo Migration
-    php artisan make:migration create_products_table
-    định nghĩa bảng
-    Tạo bảng :  php artisan migrate
-    
-B2: Tạo model
-    php artisan make:model Product
-
-B3: Nhập dữ liệu
-    Tạo seeder: php artisan make:seeder ProductSeeder
-    Chạy seeder: php artisan db:seed --class=ProductSeeder
 
 
 
-#Qui tắt đặt tên biến :
-Số ít: Dùng cho Model (Product, Order, User)
-
-Số nhiều: Dùng cho tên bảng trong Database (products, orders, users)
-
-Snake_case: Dùng cho tên cột trong Database (user_id, created_at)
-
-CamelCase: Dùng cho tên biến trong PHP ($productName, $orderStatus)
+Database:
 
 
 
